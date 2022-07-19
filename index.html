@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- MAIN (Center website) -->
+  <main class="main">
+
+    <h1>RESOURCES</h1>
+    <hr>
+
+    <h2>Assets</h2>
+
+    <div id="category-selection-container">
+      <button class="btn active" onclick="filterSelection('all', 'category')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature', 'category')"> Nature</button>
+      <button class="btn" onclick="filterSelection('cars', 'category')"> Cars</button>
+      <button class="btn" onclick="filterSelection('people', 'category')"> People</button>
+    </div>
+
+    <div id="oraganization-selection-container">
+      <button class="btn active" onclick="filterSelection('all', 'organization')"> Show all</button>
+      <button class="btn" onclick="filterSelection('organization 1', 'organization')"> Organization 1</button>
+      <button class="btn" onclick="filterSelection('organization 2', 'organization')"> Organization 2</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column nature" data-category="nature" data-organization="organization 1">
+        <div class="content">
+          <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature" data-category="nature" data-organization="organization 1">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/lights.jpg" alt="Lights" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature" data-category="nature" data-organization="organization 1">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/nature.jpg" alt="Nature" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+
+      <div class="column cars" data-category="cars" data-organization="organization 2">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/cars1.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars" data-category="cars" data-organization="organization 1">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/cars2.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars" data-category="cars" data-organization="organization 2">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/cars3.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+
+      <div class="column people" data-category="people" data-organization="organization 2">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/people1.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people" data-category="people" data-organization="organization 1">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/people2.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people" data-category="people" data-organization="organization 2">
+        <div class="content">
+          <img src="https://www.w3schools.com//w3images/people3.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+  </main>
+
+  <script src="action.js"></script>
+
+</body>
+
+</html>
