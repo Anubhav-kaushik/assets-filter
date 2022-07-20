@@ -16,17 +16,44 @@
 
     <h2>Assets</h2>
 
-    <div id="category-selection-container">
-      <button class="btn active" onclick="filterSelection('all', 'category')"> Show all</button>
-      <button class="btn" onclick="filterSelection('nature', 'category')"> Nature</button>
-      <button class="btn" onclick="filterSelection('cars', 'category')"> Cars</button>
-      <button class="btn" onclick="filterSelection('people', 'category')"> People</button>
+    <div id="toggle-filter-btn" data-filter="1">
+      <div class="circle" ></div>
     </div>
 
-    <div id="oraganization-selection-container">
-      <button class="btn active" onclick="filterSelection('all', 'organization')"> Show all</button>
-      <button class="btn" onclick="filterSelection('organization 1', 'organization')"> Organization 1</button>
-      <button class="btn" onclick="filterSelection('organization 2', 'organization')"> Organization 2</button>
+    <div class="filter-btns-container" id="filter-1" data-filter="1">
+      <div id="category-selection-container" class="btn-container">
+        <span class="btn-type"><strong>Category: </strong></span>
+        <button class="btn active" onclick="filterSelection('all', 'category')">Show all</button>
+        <button class="btn" onclick="filterSelection('nature', 'category')">Nature</button>
+        <button class="btn" onclick="filterSelection('cars', 'category')">Cars</button>
+        <button class="btn" onclick="filterSelection('people', 'category')">People</button>
+      </div>
+  
+      <div id="oraganization-selection-container" class="btn-container">
+        <span class="btn-type"><strong>Organization: </strong></span>
+        <button class="btn active" onclick="filterSelection('all', 'organization')"> Show all</button>
+        <button class="btn" onclick="filterSelection('organization 1', 'organization')"> Organization 1</button>
+        <button class="btn" onclick="filterSelection('organization 2', 'organization')"> Organization 2</button>
+      </div>
+    </div>
+
+    <div class="filter-btns-container filter-input-btns-container" id="filter-2" data-filter="2">
+        <span class="btn-type"><strong>Category: </strong></span>
+        <select name="category" id="category-selection-input">
+          <option value="all" selected>Show all</option>
+          <option value="nature">Nature</option>
+          <option value="cars">Cars</option>
+          <option value="people">People</option>
+        </select>
+
+        <span class="horizontal-spacing" data-spacing="2em"></span>
+
+        <span class="btn-type"><strong>Organization: </strong></span>
+        <select name="organization" id="organization-selection-input">
+          <option value="all" selected>Show all</option>
+          <option value="organization 1">Organization 1</option>
+          <option value="organization 2">Organization 2</option>
+        </select>
     </div>
 
     <!-- Portfolio Gallery Grid -->
@@ -103,6 +130,8 @@
   </main>
 
   <script src="action.js"></script>
+  <script src="input-filter.js"></script>
+  <script src="extra.js"></script>
 
 </body>
 
